@@ -360,6 +360,17 @@
 
 
 
+  @media only screen and (max-width:1000px) {
+    .cv.active .cv-item{
+        width: 500px;
+    }
+  }
+
+  @media only screen and (max-width:1000px) {
+  .iletisim.active .iletisim-item{
+    width: 500px;
+}
+}
 @media only screen and (max-width:1000px) {
     .portfolyo .portfolyo-item{
         flex-basis: 100%;
