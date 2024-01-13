@@ -1,0 +1,186 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    box-sizing: border-box;
+   
+}
+
+
+
+.tittles{
+    font-size: xx-large;
+    padding-top: 10%;
+    height: 200px;
+    margin-left: 13%;
+    width: 800px;
+    letter-spacing: 30px;
+    text-shadow: 1px;
+    color: aliceblue;
+    position: absolute;
+    z-index: 5;
+    font-family:"Genos";
+    font-weight: 800;
+}
+
+
+
+.tittle1{
+    
+    word-spacing: 3px;
+
+}
+
+.littletittles{
+    margin-left: 13%;
+    width: 200;
+    letter-spacing: 2px;
+    color: aliceblue;
+    padding-top: 24%;
+    position: absolute;
+    z-index: 4;
+    font-family: "genos";
+    font-weight: 100;
+
+}
+
+.headertext{
+    position: absolute;
+    margin-left: 12%;
+    list-style-type: none;
+    z-index: 3;
+    top: 70%;
+}
+
+
+.button{
+   display: block;
+   color: black;
+   padding: 8px 35px;
+   cursor: pointer;
+   background-color: white;
+   margin-left: 13%;
+   border-top-left-radius: 35px;
+   border-bottom-right-radius: 35px;
+   position: relative;
+   overflow: hidden;
+   align-items: center;
+   justify-content: center;
+   font-family: "genos";
+   font-weight: bold;
+}
+
+.button::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+    
+.button:hover::after{
+        top: 0;
+}
+
+   
+    
+.photo{
+    display: flex;
+    top: 20%;
+    padding-left: 100px;
+    z-index: 1;
+    position: relative;
+}
+
+.photocat1{
+    position: absolute;
+    right: 0;
+    padding-top: 400px;
+}
+
+.photocat2{
+    position: absolute;
+    right: 68%;
+    padding-top: 480px;
+}
+
+
+@media only screen and (max-width:990px) {
+  .tittles{
+    font-size: 40px;
+    width: auto;
+    padding-top: 25%;
+
+}
+   }
+
+   @media only screen and (max-width:990px) {
+   .littletittles{
+    font-size: 25px;
+    margin-top: 30%;
+   }
+   }
+
+   @media only screen and (max-width:990px) {
+   .photocat1{
+    margin-top: 90%; 
+   }
+   }
+
+   @media only screen and (max-width:990px) {
+   .photocat1 img {
+    width: 800px;
+    height: auto;
+   }
+   }
+
+   @media only screen and (max-width:990px) {
+   .photocat2{
+    left: 40%;
+    margin-top: 21%;
+   }
+}
+
+@media only screen and (max-width:990px) {
+
+   .photocat2 img{
+    width: 200px;
+    height: auto;
+   }
+}
+
+@media only screen and (max-width:990px) {
+    .headertext{
+     margin-top: 75%;
+     position: relative;
+     margin-right: 100%;
+    }
+ }
+
+@media only screen and (max-width:990px) {
+   .button{
+    display: block;
+    color: black;
+    padding: 20px 80px;
+    cursor: pointer;
+    background-color: white;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    position: relative;
+    overflow: hidden;
+    font-family: "genos";
+    font-weight: bold;
+    font-size: x-large;
+    position: absolute;
+    z-index: 2222;
+ }
+}

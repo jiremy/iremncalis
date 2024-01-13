@@ -1,0 +1,481 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    padding: 25px;
+    background-color: black;
+   
+}
+    
+.band{
+    display: flex;
+    color: white;  
+}
+
+.left{
+    display: flex;
+   font-family: "Genos";
+   letter-spacing: 5px;
+   
+}
+
+.name{
+    font-size: x-large;
+    position: absolute;
+   
+    
+}
+
+.balon{
+    padding-left: 100px;
+}
+
+.menu{
+    display: flex;
+   justify-content: center;
+   padding-left: 83%;
+    align-items: center;
+    letter-spacing: 20px;
+    list-style-type: none;
+}
+
+.li{
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    
+    align-items: center;
+    letter-spacing: 20px;
+    list-style-type: none;
+}
+
+
+
+.containerabout{
+    padding-top: 10%;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image{
+    width: 30%;
+}
+
+.about{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.text{
+    font-family: "Genos";
+    font-size: x-large;
+    width: 90%;
+    text-align: justify;
+   
+}
+
+.text1{
+    font-family: "Genos";
+    font-size: x-large;
+    
+    
+}
+
+.portfolyo{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4%;
+    padding-bottom: 20%;
+}
+
+.portfolyo-item{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolyo-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.up{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0.5;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    font-weight: bold;
+    font-family: "Genos";
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.portfolyo-item:hover .up{
+    top: 0;
+}
+
+.portfolyo-item:hover img{
+    transform: scale(1.1);
+}
+
+.finish{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.finishtext{
+    font-family: "Genos";
+    font-size: large;
+}
+
+.finishtextend{
+    font-family: "Genos";
+    font-size: small;
+}
+
+#menu-ikon{
+    position: absolute;
+    right: 15px;
+    font-size: 17px;
+    display: none;    
+
+}
+
+.iletisim{
+    background-color: black;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 150ms ease-in-out;
+    z-index: -1;
+}
+
+.iletisim.active{
+    opacity: 0.8;
+    z-index: 999;
+    width: 100%;
+
+}
+
+.iletisim-item{
+    position: relative;
+    width: 0;
+    background-color: white;
+    height: 100%;
+    float: right;
+    transition: all 150ms ease-in-out;
+}
+
+.iletisim.active .iletisim-item{
+    width: 300px;
+}
+
+.iletisim-item ul li{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    font-size: large;
+    margin-top: 40px;
+   word-spacing: 10px;
+   line-height: 1.5;
+   font-family: "Genos";
+   font-weight: bold;
+}
+
+.cv-item{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    padding-left: 20px;
+    cursor: pointer;
+    font-family: "Genos";
+    position: relative;
+    width: 0;
+    background-color: white;
+    height: 100%;
+    float: right;
+    transition: all 150ms ease-in-out;
+    
+}
+
+.textcv1{
+    padding-top: 40px;
+    font-size: 30px;
+}
+.textcv2{
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.textcv3{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.textcv4{
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+
+.cv{
+    background-color: black;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 150ms ease-in-out;
+    z-index: -1;
+}
+
+.cv.active{
+    opacity: 0.8;
+    z-index: 999;
+    width: 100%;
+
+}
+
+
+
+.cv.active .cv-item{
+    width: 300px;
+}
+
+.cv-item .bi-arrow-right{
+    position: absolute;
+    left: 5px;
+    top: 0;
+    font-size: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+
+
+.iletisim-item .bi-arrow-right{
+    position: absolute;
+    left: 5px;
+    top: 0;
+    font-size: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+.isim{
+    color: black;
+    margin-top: 5rem;
+    text-align: center;
+    font-family: "Genos";
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.cizimitems{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    margin-top: 40px;
+    margin-left: 30px;
+    line-height: 2;
+    cursor: pointer;
+   
+}
+.cizim{
+    background-color: white;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    opacity: 0;
+
+    z-index: -1;
+}
+
+.cizim.active{
+    opacity: 0.8;
+    z-index: 999;
+    width: 100%;
+
+}
+
+
+
+.cizim.active .cizim-item{
+    width: 100%;
+}
+
+.cizim-item .bi-arrow-right{
+    position: absolute;
+    left: 5px;
+    top: 0;
+    font-size: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+
+
+.pdf-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    cursor: pointer;
+  }
+
+  
+
+
+
+@media only screen and (max-width:1000px) {
+    .portfolyo .portfolyo-item{
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .portfolyo .portfolyo-item{
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .containerabout {
+        flex-basis: 100%;
+       flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width:990px) {
+    .containerabout .image{
+        padding-right: 220px;
+        
+        
+    }
+
+}
+
+@media only screen and (max-width:990px) {
+    .containerabout .text{
+        padding-left: 15px;
+        
+    }
+}
+    
+    @media only screen and (max-width:990px) {
+        .containerabout .text1{
+            padding-left: 15px;
+            
+        }
+    
+    }
+
+    @media only screen and (max-width:800px) {
+        .container{
+            padding: 30px;
+            
+            
+            
+        }
+    
+    }
+
+    @media only screen and (max-width:800px) {
+        .menu{
+            display: flex;
+           justify-content: center;
+          padding-left: 180px;
+            align-items: center;
+            letter-spacing: 20px;
+            list-style-type: none;
+        }
+    
+    }
+
+   
+    
+    @media only screen and (max-width:990px) {
+        .menu ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            background-color: black;
+            width: 100%;
+            opacity: 0.8;
+            overflow: hidden;
+            transition: max-height .5s;
+          
+        }
+
+        .menu ul li{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .menu #menu-ikon{
+            display: block;
+            cursor: pointer;
+            
+        }
+    
+    }
+
+    @media only screen and (max-width:990px) {
+        .cv-item{
+            display: flex;
+            flex-direction: column;
+            font-size: x-large;
+            padding-left: 10px;
+            cursor: pointer;
+            font-family: "Genos";
+            position: relative;
+            width: 0;
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            float: right;
+            transition: all 150ms ease-in-out;
+
+    
+
+        }
+    }
